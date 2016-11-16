@@ -1,3 +1,3 @@
-# site-ffc
+# site-fferz
 Gluon Site of Freifunk Erzgebirge
 
