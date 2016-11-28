@@ -24,6 +24,14 @@ GLUON_SITE_PACKAGES := \
 	iwinfo \
 	iptables \
 	haveged
+	
+ifeq ($(GLUON_TARGET),brcm2708-bcm2709)
+GLUON_SITE_PACKAGES += \
+    kmod-usb-core \
+    kmod-usb2 \
+    kmod-usb-hid \
+    kmod-ath9k-htc
+endif
 
 ifeq ($(GLUON_TARGET),x86-generic)
 GLUON_SITE_PACKAGES += \
